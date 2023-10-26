@@ -1,0 +1,27 @@
+//Declaração de variável
+let num1 = Number(prompt("Digite o primeiro número:"))
+let num2 = Number(prompt("Digite o segundo número:"))
+
+let resultadoSoma = num1 + num2;
+
+console.log("Resultado da soma:",resultadoSoma);
+
+let resultadoDivisao = num1 / num2;
+
+console.log(`A divisão dos números é: ${resultadoDivisao}`);
+
+let precoCusto = Number(prompt("Digite o preço de Custo:"))
+
+let percAcrescimo = Number(prompt("informe  percentual de acrescimo:"))
+
+let precoVenda = precoCusto + (precoCusto * percAcrescimo)
+
+console.log(`O preço de venda é: ${precoVenda}`);
+
+let precoVendaMamaoAcucar = 
+Number(prompt("informe o preço de venda a ser parcelado:"));
+
+let parcela = 
+Number(prompt("informe a qtde de parcelas sem juros:"));
+
+console.log(`Preço parcelado em  ${parcela} vezes sem juros no valor de R$ ${precoVendaMamaoAcucar / parcela}`);
