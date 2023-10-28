@@ -23,7 +23,7 @@ body{
   text-align: center;
   color:white;
   background-color: rgb(31,41,55);
-  padding: 5px;
+  padding: 20px;
 }
 
 a {
@@ -46,8 +46,23 @@ li {
   gap: 12px;
 }
 
+.content-1{
+ display: flex;
+}
+.content-1-1{
+  background-color: #1f2937;
+  color: white;
+}
+.content-1-2{
+  background-color: #6d747d;
+}
+
 .content-3{
-  background-color: rgb(229,231,235);
+  background-color: #e5e7eb;
   padding: 10px ; 
   font-stretch:normal;
+  padding: 30px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
