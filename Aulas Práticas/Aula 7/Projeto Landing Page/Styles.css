@@ -4,7 +4,7 @@ url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
 body{
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
@@ -48,13 +48,42 @@ li {
 
 .content-1{
  display: flex;
+ flex-direction: row;
+ justify-content: space-between;
 }
 .content-1-1{
   background-color: #1f2937;
   color: white;
+  padding: 100px;
 }
 .content-1-2{
   background-color: #6d747d;
+}
+
+.content-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+
+  gap: 60px;
+}
+
+.card{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
 }
 
 .content-3{
@@ -65,4 +94,18 @@ li {
   align-items: center;
   align-content: center;
   text-align: center;
+}
+
+.signpup {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #008CBA;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
