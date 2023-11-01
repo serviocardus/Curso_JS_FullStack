@@ -1,0 +1,16 @@
+// Comando if - desvio condicional
+let idade = 15;
+
+if (idade < 18) {
+ 
+ console.log("Você é menor de idade");
+ 
+} else if (idade <= 59) {
+ 
+  console.log("Você é adulto");
+ 
+} else {
+ 
+  console.log("Você está na melhor idade");
+ 
+}

@@ -1,0 +1,24 @@
+// Estações do ano
+// verão - estação do sol
+// inverno - estação do frio
+// primavera - estação das flores
+// outono - estação das frutas
+// .toLowerCase()
+// let a = prompt("texto").toLowerCase();
+
+// Use if else if
+let estacao = prompt("Digite o nome da estação").toLowerCase();
+
+console.log(estacao);
+
+if (estacao === "verão"){
+ console.log("Estação do sol");
+} else if (estacao === "primavera") {
+ console.log("Estação das flores");
+} else if (estacao === "outono") {
+ console.log("Estação das frutas");
+}else if (estacao === "inverno"){
+ console.log("Estação do frio");
+} else {
+ console.log("Esta estação não é válida");
+}
