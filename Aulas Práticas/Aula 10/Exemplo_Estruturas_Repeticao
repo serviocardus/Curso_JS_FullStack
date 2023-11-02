@@ -1,0 +1,43 @@
+let i = 0;
+
+do {
+      console.log(`Este é o núnero : ${i}; `);
+  
+  i++;
+  
+} while (i < 5)
+
+
+
+let i2 = 0;
+
+while (i2 < 5)
+  {
+    
+    console.log(`Este é o núnero : ${i2}; `);
+    
+    Int32Array += 1;
+  }
+
+console.log("Fim do loop");
+
+
+
+for(let i3 = 0; i3 < 10; i3++)
+  {
+        console.log(`Este é o núnero : ${i3}; `);
+  }
+
+console.log("Fim do loop");
+
+//Estrutura de repetição teste no final do laço
+
+let continuar;
+
+do {
+  
+  //coloque seu código aqui
+  
+  continuar = prompt("Deseja continuar S/N ?").toUpperCase();
+  
+} while (continuar === "S")

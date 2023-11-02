@@ -1,0 +1,19 @@
+let numero = Number(prompt("Digite um número de 1 a 5 inteiro:"));
+
+switch (numero) {
+  case 1:
+   console.log("Um")
+    break;
+  case 2:
+   console.log("Dois")
+    break;
+  case 3:
+   console.log("Três")
+    break;
+  case 4:
+  case 5:
+    console.log("Quatro ou Cinco");
+    break;
+  default:
+    console.log(`Valor: ${numero} fora da faixa`);
+}

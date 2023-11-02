@@ -1,0 +1,19 @@
+let nome, n1,n2,n3, media;
+
+nome=prompt("Informe o nome do aluno:");
+
+n1= Number(prompt("Informe a nota N1 do aluno:"));
+n2= Number(prompt("Informe a nota N2 do aluno:"));
+n3= Number(prompt("Informe a nota N3 do aluno:"));
+
+media = (n1+n2+n3)/3;
+
+console.log(`O nome do aluno(a) informado é o ${nome}.`);
+
+ if(media<=5){
+console.log(`O aluno ${nome} está reprovado.`);
+}else if(media>5 && media<7){
+console.log(`O aluno ${nome} está de recuperação.`);
+}else{
+console.log(`O aluno ${nome} está aprovado.`);
+}

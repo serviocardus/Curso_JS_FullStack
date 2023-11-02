@@ -1,0 +1,13 @@
+let numero = prompt("Digite número maior que 10");
+
+console.log(numero);
+
+if (isNaN(numero) || Number.isNaN(numero) ) {
+console.log("Isto não é um número");
+}
+else if(numero >= 10) 
+{
+      console.log("Este número é maior ou igual a 10");
+} 
+else
+  console.log("Este número é inferior a 10");

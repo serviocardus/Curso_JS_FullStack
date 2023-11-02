@@ -1,0 +1,89 @@
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+
+console.log(`Hoje é ${day}`);
+
+
+
+let numero = Number(prompt("Digite um número de 1 a 4 inteiro:"));
+
+switch (numero) {
+  case 1:
+   console.log("Um")
+    break;
+  case 2:
+   console.log("Dois")
+    break;
+  case 3:
+   console.log("Três")
+    break;
+  case 4:
+    console.log("Quatro")
+    break;
+  default:
+    console.log(`Valor: ${numero} fora da faixa`);
+}
+
+
+let numero_faixa = Number(prompt("Digite um número de 1 a 5 inteiro:"));
+
+switch (numero_faixa) {
+  case 1:
+   console.log("Um")
+    break;
+  case 2:
+   console.log("Dois")
+    break;
+  case 3:
+   console.log("Três")
+    break;
+  case 4:
+  case 5:
+    console.log("Quatro ou Cinco");
+    break;
+  default:
+    console.log(`Valor: ${numero_faixa} fora da faixa`);
+}
+
+
+//comando switch
+
+let estacao = prompt("Digite o nome da estação").toLowerCase();
+
+switch (estacao) {
+  case "verão" :
+    console.log("Estação do sol");
+  break;
+   case "outono" :
+    console.log("Estação das frutas");
+  break;
+  case "inverno" :
+    console.log("Estação do frio");
+  break;
+  case "primavera" :
+    console.log("Estação das flores");
+  break;
+  default:
+    console.log("Esta não é uma estação do ano");
+}
