@@ -1,0 +1,42 @@
+let continuar;
+      let salario_minimo = 1320.00;
+      let Perc_reajuste_salario = 0.00;
+      let Salario_funcionario = 0.00;
+      let Novo_Salario_funcionario = 0.00;
+      let Reajuste_Salario_funcionario = 0.00;
+      let Incremento_Folha = 0.00;
+      let Nome_Funcionário = ""
+
+      do {
+        Nome_Funcionário = prompt("Informe o nome do funcionário:");
+        Salario_funcionario = Number(prompt("Informe seu salário:"));
+        
+        if(Salario_funcionario < (3 * salario_minimo))
+        {
+          Perc_reajuste_salario = 0.50;
+        }
+        else if(Salario_funcionario <= (10 * salario_minimo))
+        {
+          Perc_reajuste_salario = 0.20;
+        }
+       else if(Salario_funcionario <=  (20 * salario_minimo))
+         {
+           Perc_reajuste_salario = 0.15;
+         }
+       else
+       {
+         Perc_reajuste_salario = 0.10;
+       }
+        
+        Reajuste_Salario_funcionario = (Salario_funcionario * Perc_reajuste_salario);
+        Novo_Salario_funcionario = (Salario_funcionario + Reajuste_Salario_funcionario);
+        Incremento_Folha += ( Novo_Salario_funcionario - Salario_funcionario);
+        
+        console.log(`O novo salário do funcionário ${Nome_Funcionário} é de R$ ${Novo_Salario_funcionario}, o reajuste foi de R$ ${Reajuste_Salario_funcionario} com um percentual de aumento de ${ Perc_reajuste_salario * 100}%`);
+        
+        continuar = prompt("Deseja continuar S/N?");
+      } while (continuar === "S");
+
+      console.log(`O aumento total da folha será de R$: ${Incremento_Folha}`);
+
+ //alert(`O Total a ser pago pelo cliente é de R$: ${valorPago}, o total de desconto foi de ${valorDesconto}`);

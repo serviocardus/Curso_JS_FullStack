@@ -1,0 +1,13 @@
+//For - Comando de repetição com variável de controle.
+for (let i = 0; i < 9; i++) {
+  console.log(`o valor de i é: ${i}`);
+}
+
+for (let c = 0; c < 9; c += 2) {
+    console.log(`o valor de c é: ${c}`);
+  }
+
+
+  for (let d = 9; d > -5; d -= 2) {
+    console.log(`o valor de d é: ${d}`);
+  }
