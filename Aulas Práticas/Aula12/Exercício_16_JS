@@ -1,0 +1,17 @@
+let arr = [];
+
+for (let i = 0; i < 10; i++){
+  arr[i] = i * 2.00;
+  
+  //imprimindo as posições ímpares do vetor
+  if(i % 2 != 0){
+    console.log(`Posição ${i}:`,arr[i]);
+    arr[i] = arr[i] + (arr[i] * 0.05)
+  }
+  else{
+    console.log(`Posição ${i}:`,arr[i]);
+    arr[i] = arr[i] + (arr[i] * 0.02)
+  }
+}
+  
+console.log(arr);

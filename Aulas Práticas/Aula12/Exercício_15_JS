@@ -1,0 +1,12 @@
+let arr = [];
+
+for (let i = 0; i < 10; i++){
+  arr[i] = i;
+  
+  //imprimindo as posições ímpares do vetor
+  if(i % 2 != 0){
+    console.log(`Posição ${i}:`,arr[i]);
+  }
+}
+  
+console.log(arr);

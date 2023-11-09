@@ -1,0 +1,16 @@
+let arr = []; cont = 4;
+
+for (let i = 0; i <= 9; i++){
+  
+  //Infomando os números para as 5 primeiras posições do vetor
+  if(i <= 4){
+      arr[i] = Number(prompt(`Infome um número real para a posiçao ${i} : `));
+  }
+  else{
+    arr[i] = arr[cont];
+    cont--;
+  }
+  
+}
+  
+console.log(arr);

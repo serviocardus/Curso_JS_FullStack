@@ -1,0 +1,11 @@
+let arr = [];
+
+for (let i = 0; i < 10; i++){
+  arr[i] = i;
+}
+
+for (let i = 9; i >= 0; i--){
+  console.log(arr[i]);
+}
+  
+console.log(arr);
