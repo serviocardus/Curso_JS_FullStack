@@ -16,3 +16,18 @@ for (let j = 4; j >= 0; j--){
 }
 
 console.log(arr);
+
+//Hoisting - reconhece uma função mesmo ela sendo declarada após sua chamada
+console.log(mensagem());
+
+function mensagem(){
+  
+   return "estou aqui!!!";
+ }
+
+ //Retornando os argumentos de uma função
+ function func(){
+  console.log(arguments);
+}
+
+func(1,2,3,4,5,6);
