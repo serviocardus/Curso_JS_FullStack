@@ -1,0 +1,63 @@
+.container{
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px / 40px 80px 40px ;
+  background-color: orange;
+}
+
+.meugrid{
+  border: 1px solid ;
+  font-size: 50%;
+  text-align: center;
+}
+
+#grid-1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+
+#grid-2{
+  grid-column: 1/2;
+  grid-row: 2/2;
+  background-color: green;
+  text-align: center;
+}
+
+
+#grid-3{
+ grid-column: 2/3;
+ grid-row: 2/4;
+ background-color: orange;
+ text-align: center;
+}
+
+#grid-4{
+ grid-column: 3/4;
+ grid-row: 2/3;
+ background-color: rgb(41, 141, 41);
+ text-align: center;
+}
+
+
+#grid-5{
+ grid-column: 1/2;
+ grid-row: 3/5;
+ background-color: orange;
+ text-align: center;
+}
+
+#grid-6{
+ grid-column: 3/4;
+ grid-row: 3/4;
+ background-color: rgb(41, 141, 41);
+ text-align: center;
+}
+
+#grid-7{
+ grid-column: 2/4;
+ grid-row: 4/5;
+ background-color: orange;
+ text-align: center;
+}
