@@ -1,21 +1,31 @@
 import React from "react";
-//import Contact from "./components/Contact";
-import Citacoes from "./components/Citacoes";
-import citacoesData from "./citacoesData";
+
+import { useState } from "react";
 
 export default function App() {
 
-  const elementData = citacoesData.map(elemento => {
-    return <Citacoes 
-            citacao = {elemento.citacao} 
-            autor ={elemento.autor}  />
-  });
+  const [count, setCount] = useState(0);
+
+  function add() {
+    setCount(prevCount => prevCount + 1);
+  }
+
+  function subtract(){
+    setCount(prevCount => prevCount - 1);
+
+  }
 
   return (
-    <div className="contacts">
-   
-   {elementData}
+    <div className="counter">
 
+      <button onClick={subtract} className="counter-minus">–</button>
+
+      <div className="counter-count">
+        <h1>{count}</h1>
+      </div>
+
+      <button onClick={add} className="counter-plus">+</button>
+      
     </div>
   );
 }
