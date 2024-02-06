@@ -1,0 +1,5 @@
+E3Ki4DZVxE422cNb
+
+mongodb+srv://serviocardus:<password>@cluster0.2r7tune.mongodb.net/
+
+mongodb+srv://serviocardus:E3Ki4DZVxE422cNb@cluster0.2r7tune.mongodb.net/
